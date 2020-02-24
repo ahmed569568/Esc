@@ -1,0 +1,44 @@
+@import "src/theme/theme-variables";
+.navbar {
+  margin-bottom: $spacer;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  z-index: 5;
+  .nav {
+    margin-left: auto;
+  }
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 65px;
+    cursor: pointer;
+    p {
+      font-size: 12px;
+      font-weight: 100;
+    }
+  }
+  .esc {
+    color: #71c230;
+  }
+  .navbar-nav {
+    a {
+      transform: skewX(-29.5deg);
+      color: #fff;
+      padding: 35px;
+      &:hover {
+        background-color: #71c230;
+        height: auto;
+      }
+    }
+    .active {
+      background-color: #71c230;
+    }
+  }
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
